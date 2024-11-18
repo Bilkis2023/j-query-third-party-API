@@ -1,0 +1,14 @@
+
+element.style{
+    border: 5px solid;
+}
+
+
+.fancy{
+    font-size: 60px;
+    color: rgb(122, 424, 242);
+    background-color: brown;
+    border-radius: 1rem;
+    width: 300px;
+    margin: 1rem auto;
+}
