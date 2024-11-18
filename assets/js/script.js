@@ -31,3 +31,27 @@ var abilities = [
     'Event Listener',
     'much more',
 ];
+
+for(var i = 0; i<abilities.length; i++){
+    // create a new '<li>' for each ability and it's text content:
+var abilityEl = $('li');
+// abilityEl.textContent = ability[i];
+abilityEl.text(abilities[i]);
+
+// `my-3` class adds margin on top and bottom
+abilityEl.addClass('my-3');
+
+// Alernatively
+// var abilityEl = $("<di>" + abilities + "</div>");
+// now add this new `<li>` element to the `<div>` container element.
+rootEl.append(abilityEl);
+}
+
+// select all `<div>` elements on the page
+// document.querySelectorAll('div');
+console.log($('div'));
+
+// Alternatively use the `$.each` method
+// $.each('abilities', function(i, abilities){
+// abilityEl.append("<div>" + ability + "<div>");
+// } )
